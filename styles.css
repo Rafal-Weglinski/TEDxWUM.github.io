@@ -1,0 +1,287 @@
+.navbar-brand img {
+    width: 15em;
+}
+
+/* Fix righ-sided whitespace */
+html,body
+{
+   
+    overflow-x: hidden; 
+}
+
+.navbar-style {
+    background: white;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top:100px;
+}
+
+#navbar {
+    background-color: white;
+    font-weight: 600;
+}
+
+#smoke {
+    
+    position: relative; 
+    min-height: 250px;
+    background:url("Images/smoke.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size:cover;
+    /* background-position: 0 -300px; */
+    background-position: bottom;
+
+
+}
+
+#language {
+    display: flex;
+}
+
+#language img {
+    width:35px;
+}
+
+#home-icon-section img {
+    margin-bottom: 30px;
+    height: 150px
+}
+
+
+.dark-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.smoke-text {
+    color: white;
+    font-size: 4rem;
+    font-weight: 600;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 250px; 
+}
+
+.red {
+    color:#FF2B06;
+}
+
+#main-footer {
+  background: #000;
+  color: #fff;
+  padding-top: 10px;
+}
+
+#social a {
+    color: #ffffff;
+}
+
+/* Google map */
+.map-container-5 {
+overflow:hidden;
+padding-bottom:56.25%;
+position:relative;
+height:0;
+}
+.map-container-5 iframe{
+left:0;
+top:0;
+height:100%;
+width:100%;
+position:absolute;
+}
+ 
+/* Formularz */
+ .card-style {
+     
+    height: 300px;
+} 
+/* Formularz */
+textarea {
+  width: 300px;
+  height: 220px;
+   resize: none;
+}
+/* Formularz */
+.form-control:focus {
+  border-color: #DC3545;
+  box-shadow: none;
+  
+}
+
+footer a  {
+    text-decoration: none;
+    color: #838383;
+}
+
+#footer-information, #footer-information p
+{
+    color: #838383;
+    margin-bottom:0;
+    padding-bottom: 10px;
+
+}
+
+#header p {
+    margin-bottom: 50px;
+    border-bottom: 1px solid gray;
+    padding-bottom: 20px;
+}
+
+.Fade-image {
+    -webkit-box-shadow: 0px 0px 15px 2px rgba(50, 50, 50, 0.67);
+-moz-box-shadow:    0px 0px 15px 2px rgba(50, 50, 50, 0.67);
+box-shadow:         0px 0px 15px 2px rgba(50, 50, 50, 0.67);
+}
+
+
+/* Our-team */
+
+.our-team{
+    position: relative;
+    text-align:center;
+    overflow: hidden;
+    box-shadow:0 0 5px #808080;
+    
+}
+
+.heading-title
+{
+	margin-bottom: 100px;
+}
+.our-team img{
+    width: 100%;
+    height: auto;
+    transform: scale(1);
+    transition: all 0.40s linear 0s;
+}
+
+.our-team:hover img{
+    transform: scale(1.2);
+    transition:transform 0.2s linear 0s;
+}
+
+.our-team .team-content{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+    opacity: 0;
+    padding: 40px 20px;
+    background: rgba(255,255,255,0.8);
+    transition: all 0.50s ease-in-out;
+}
+
+.our-team:hover .team-content{
+    opacity: 1;
+}
+
+.our-team .team-prof{
+    
+    position:relative;
+
+    
+}
+
+.our-team .team-prof {
+    color:#6a6060;
+    font-size:25px;
+    font-weight: bold;
+    letter-spacing:4px;
+    
+    
+}
+
+
+
+.our-team .team-prof small{
+    color: black;
+    display: block;
+    font-size:12px;
+    margin-top:10px;
+   
+}
+
+.our-team .social-link{
+    padding:0;
+    margin:0;
+    /* position:relative; */
+    top:13%;
+}
+
+.our-team .social-link li{
+    list-style:none;
+    margin-right:5px;
+    display:inline-block;
+}
+
+.our-team .social-link li a{
+    width: 35px;
+    height: 35px;
+    line-height:35px;
+    border-radius:50%;
+    color:#fff;
+    background:rgba(0, 0, 0, 0.3);
+}
+
+.our-team .social-link li a:hover{
+    background:#333;
+    text-decoration:none;
+}
+
+@media only screen and (max-width: 990px){
+    .our-team{  margin-bottom:20px; }
+}@charset "utf-8";
+/* CSS Document */
+
+
+@media (max-width: 768px) {
+    .hide-on-mobile {
+    display: none;
+    }
+    .reset-link a :hover{
+        text-decoration: none;
+    }
+    }
+
+    @media (min-width: 768px) {
+        .display-on-mobile
+         {
+        display: none;
+        }
+        }
+
+.reset-link {
+    text-decoration: none;
+    color:black;
+}
+
+.reset-link :hover {
+    text-decoration: underline;
+    text-decoration-color: #DC3545;
+    color:black;
+}
+
+.team-content p {
+    font-size: 1rem;
+}
+
+.collapsed-text{
+font-size: 1.5rem;
+}
+
+.normalize-logos-size {
+    width: 50%;
+}
+
+.mumu {
+    height: 1000px;
+}
