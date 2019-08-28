@@ -1,6 +1,23 @@
+
 .navbar-brand img {
-    width: 15em;
+    width: 15rem;
 }
+
+@media (max-width: 404px) {
+    .navbar-brand img
+     {
+        width: 13rem;
+    }
+    }
+    
+/* 
+    @media (max-width: 562px) {
+        .navbar-brand img
+         {
+            width: 13rem;
+        }
+        } */
+
 
 /* Fix righ-sided whitespace */
 html,body
@@ -129,8 +146,8 @@ footer a  {
 
 }
 
-#header p {
-    margin-bottom: 50px;
+#header h1 {
+    margin-bottom: 20px;
     border-bottom: 1px solid gray;
     padding-bottom: 20px;
 }
@@ -271,7 +288,7 @@ box-shadow:         0px 0px 15px 2px rgba(50, 50, 50, 0.67);
 }
 
 .team-content p {
-    font-size: 1rem;
+    font-size: 0.75rem;
 }
 
 .collapsed-text{
