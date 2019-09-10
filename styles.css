@@ -31,7 +31,7 @@ html,body
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Helvetica, Arial , sans-serif;
     padding-top:100px;
 }
 
@@ -192,7 +192,7 @@ box-shadow:         0px 0px 15px 2px rgba(50, 50, 50, 0.67);
     width: 90%;
     height: 90%;
     opacity: 0;
-    padding: 40px 20px;
+    /* padding: 40px 20px; */
     background: rgba(255,255,255,0.8);
     transition: all 0.50s ease-in-out;
 }
@@ -210,7 +210,7 @@ box-shadow:         0px 0px 15px 2px rgba(50, 50, 50, 0.67);
 
 .our-team .team-prof {
     color:#6a6060;
-    font-size:25px;
+    /* font-size:; */
     font-weight: bold;
     letter-spacing:4px;
     
@@ -264,7 +264,7 @@ box-shadow:         0px 0px 15px 2px rgba(50, 50, 50, 0.67);
     .hide-on-mobile {
     display: none;
     }
-    .reset-link a :hover{
+            .our-team .team-prof:hover{
         text-decoration: none;
     }
     }
@@ -274,6 +274,11 @@ box-shadow:         0px 0px 15px 2px rgba(50, 50, 50, 0.67);
          {
         display: none;
         }
+        .our-team .team-prof:hover {
+            text-decoration: underline;
+            text-decoration-color: black;
+            color: black;
+        }
         }
 
 .reset-link {
@@ -281,11 +286,7 @@ box-shadow:         0px 0px 15px 2px rgba(50, 50, 50, 0.67);
     color:black;
 }
 
-.reset-link :hover {
-    text-decoration: underline;
-    text-decoration-color: #DC3545;
-    color:black;
-}
+
 
 .team-content p {
     font-size: 0.75rem;
@@ -302,3 +303,4 @@ font-size: 1.5rem;
 .mumu {
     height: 1000px;
 }
+
