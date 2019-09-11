@@ -27,11 +27,7 @@ html,body
 }
 /* Slider */
 
-.carousel {
-    
-    position: relative;
-    .transition(.6s ease-in-out left);
-}
+
 
 
 .navbar-style {
