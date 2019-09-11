@@ -25,6 +25,14 @@ html,body
    
     overflow-x: hidden; 
 }
+/* Slider */
+
+.carousel {
+    
+    position: relative;
+    .transition(.6s ease-in-out left);
+}
+
 
 .navbar-style {
     background: white;
