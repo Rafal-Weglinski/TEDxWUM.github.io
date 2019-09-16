@@ -150,7 +150,7 @@ footer a  {
 
 }
 
-#header h1 {
+.header-sponsors {
     margin-bottom: 20px;
     border-bottom: 1px solid gray;
     padding-bottom: 20px;
@@ -306,7 +306,7 @@ font-size: 1.5rem;
 
 
 .normalize-logos-size {
-    width: 75%;
+    width: 50%;
 
 }
 
