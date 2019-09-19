@@ -317,3 +317,29 @@ font-size: 1.5rem;
 .mobile-text{
     color: black;
 }
+
+
+.about-ted-formating {
+    font-size: 16px;
+}
+
+.about-ted-border {
+    border-bottom: 2px solid #DC3545;
+}
+
+/* .height-of-the-row {
+    height: 600px;
+} */
+
+.flexcontainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+ }
+
+ .height-of-the-col {
+    height: 300px;
+    width: 100%;
+}
+
