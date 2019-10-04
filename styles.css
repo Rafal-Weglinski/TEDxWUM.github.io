@@ -318,11 +318,12 @@ font-size: 1.5rem;
 
 
 .about-ted-formating {
-    font-size: 16px;
+    font-size: 14px;
+    font-family: Helvetica;
 }
 
 .about-ted-border {
-    border-bottom: 2px solid #DC3545;
+    border-bottom: 1px solid #DC3545;
 }
 
 /* .height-of-the-row {
