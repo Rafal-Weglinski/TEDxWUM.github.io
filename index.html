@@ -18,6 +18,7 @@
 
     <link rel="icon" type="image/png" href="Images/Flavicon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
         integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
@@ -107,7 +108,7 @@
         <div class="container">
             <div class="row mt-5 text-center">
                 <div class="col-md-4 col-12 mb-4">
-                    <img src="Images/placeholder.png" alt="">
+                    <img src="Images/placeholder.png" alt="" class=>
                     <h2> Lokalizacja</h2>
                     <p>Warszawski Uniwersytet Medyczny,</br> Centrum Dydaktyczne - Aula B</br> ul. Księcia Trojdena 2a
                     </br>
@@ -121,7 +122,7 @@
                     <p>17 listopada 2019</p>
     
                 </div>
-                <div class="col-md-4 col-12 mb-4">
+                <div class="col-md-4 col-12 mb-4" >
                     <img src="Images/clock.png" alt="">
                     <h2> Godzina</h2>
                     <p>13:00</p>
@@ -138,48 +139,157 @@
             <div class="row">
                 <div class="col">
                     <div class="container">
-                        <h2 class="smoke-text"> Poznaj <span class="red">x</span></h2>
+                         <h2 class="smoke-text"> Agenda <!--<span class="red">x</span>--></h2> 
                     </div>
                 </div>
             </div>
         </div>
     </Header>
+
+    
+    <!-- Time line -->
+<div class="timeline-container">
+    <div class="container">
+        <div class="page-header">
+            <h1 id="timeline"></h1>
+        </div>
+        <ul class="timeline">
+            <li class="text-right">
+                <div class="timeline-badge danger"><i class="fas fa-check-square"></i></div>
+                
+                <div class="timeline-panel" data-aos="fade-right" data-aos-duration="1000" >
+                  <div class="timeline-heading">
+                    <h3 class="timeline-title">12:00 - 12:45</h3>
+                  </div>
+                  <div class="timeline-body">
+                    <h4>Rejestracja uczestników</h4>
+                  </div>
+                </div>
+              </li>
+            <li class="timeline-inverted">
+              <div class="timeline-badge danger"><i class="fas fa-chalkboard-teacher"></i></div>
+              <div class="timeline-panel" data-aos="fade-left" data-aos-duration="1000">
+                <div class="timeline-heading">
+                  <h3 class="timeline-title">13:00 - 14:45</h3>
+                </div>
+                <div class="timeline-body">
+                  <p>
+                      <ul>
+                    <li><strong> Our Duty of Morality </strong></br>Albert Hobohm</li>
+                    <li> <strong>Pasażerowie algorytmów</strong> </br> Dota Szymborska</li>
+                    <li> <strong>Reimagining AI for Clinical Optimization</strong></br>Om Agarwal </li>
+                    <li> <strong>Upcoming lifestyle changes- Are we ready for new recommendations?</strong></br>
+                        Dr hab. Marek Postuła </li>
+                </ul>
+                    </p>
+                </div>
+              </div>
+            </li>
+            <li class="text-right">
+              <div class="timeline-badge danger"><i class="fas fa-utensils"></i></div>
+              <div class="timeline-panel" data-aos="fade-right" data-aos-duration="1000">
+                <div class="timeline-heading">
+                  <h3 class="timeline-title">14:45 - 16:15</h3>
+                </div>
+                <div class="timeline-body">
+                  <h4>Przerwa lunchowa</h4>
+                </div>
+              </div>
+            </li>
+            <li class="timeline-inverted">
+                <div class="timeline-badge danger"><i class="fas fa-chalkboard-teacher"></i></div>
+                <div class="timeline-panel" data-aos="fade-left" data-aos-duration="1000">
+                  <div class="timeline-heading">
+                    <h3 class="timeline-title">16:15 - 18:00 </h3>
+                    <h3></h3>
+                  </div>
+                  <div class="timeline-body">
+                    <p>
+                        <ul>
+                    <li><strong> Sztuka dojścia do celu </strong></br>Artur Rogalski</li>
+                    <li> <strong>How to change anything in medicine?</strong> </br> Dr hab. Emilian Snarski</li>
+                    <li> <strong>Wykorzystaj swój potencjał. Nie tylko w sporcie</strong></br>Joanna Budzis </li>
+                    <li> <strong>O czym milczysz, gdy nie mówisz o miesiączce?</strong></br>
+                        Kamila Raczyńska, Barbara Pietruszczak </li>
+                </ul>
+                      
+                    
+                      </p>
+                  </div>
+                </div>
+              </li>
+              <li class="text-right">
+                <div class="timeline-badge danger"><i class="fas fa-handshake"></i></div>
+                <div class="timeline-panel" data-aos="fade-right" data-aos-duration="1000">
+                  <div class="timeline-heading">
+                    <h3 class="timeline-title">18:00 - 18:30</h3>
+                  </div>
+                  <div class="timeline-body">
+                    <h4>Podsumowanie konferencji i podziękowania</h4>
+                  </div>
+                </div>
+              </li>
+        </ul>
+    </div>
+</div>
     
     <!-- About -->
-    <section id="info-section">
-        <div class="container">
-            <div class="row  mt-5 ">
-                    <div class="col-md-6 col-12 ">
-                            <h2 class="font-weight-bold about-ted-border p-1">Czym jest TEDxWUM? </br></h2>
-                            <p class="about-ted-formating">
-                                    17 listopada na Warszawskim Uniwersytecie Medycznym odbędzie się konferencja TEDxWUM, podczas której 11 wyjątkowych prelegentów ze świata medycyny, technologii, szeroko pojętej nauki oraz sportu, wygłosi swoje inspirujące przemówienia i podzieli się z nami swoim doświadczeniem oraz wiedzą. TEDx jest rodzajem lokalnych konferencji, na które zapraszani są wyselekcjonowani prelegenci z różnorodnych dziedzin. Celem jest rozprzestrzenianie wyjątkowych pomysłów oraz stworzenie przestrzeni do odkrywania nowych idei.
-                            </p>
-                                
-    
-                 </div>
-                <div class="col-md-6 col-12 ">
-                    <h2 class="font-weight-bold about-ted-border p-1"> Czym jest TEDx?</br></h2><!--<h5>x = independently organized event</h5>-->
-                    <p class="about-ted-formating">
-                        W duchu pomysłów wartych rozpowszechnienia, TEDx jest to program lokalnych, samoorganizujących się wydarzeń, które łączą wspólnie ludzi, aby dzielić się doświadczeniami podobnymi do TED. Podczas wydarzenia TEDx Talks na nagraniach i na żywo łączą się, aby wywołać głęboką dyskusję. Te lokalne, samoorganizowane wydarzenia są oznaczone marką TEDx, gdzie x = niezależnie zorganizowane wydarzenie TED. Konferencja TED zawiera ogólne wytyczne dotyczące programu TEDx, ale wydarzenia TEDx są organizowane samodzielnie przez organizatorów z zachowaniem zastrzeżeniem niektórych zasad i przepisów.
-                    </p>
-               </div>
-                
+
+    <div class="container">
+      
+      
+      
+        <div class="row mb-5">
+          <div class="col-lg-9 mx-auto">
+            <!-- Accordion -->
+            <div id="accordionGroup" class="accordion shadow">
+      
+              <!-- Accordion item 1 -->
+              <div class="card">
+                <div id="headingOne" class="card-header bg-white shadow-sm border-0">
+                  <h5 class="mb-0 font-weight-bold"><a href="#" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" class="d-block position-relative text-dark  collapsible-link py-2">Czym jest TEDxWUM?</a></h5>
+                </div>
+                <div id="collapseOne" aria-labelledby="headingOne" data-parent="#accordionGroup" class="collapse show">
+                  <div class="card-body p-5">
+                    <p class="font-weight-light m-0">17 listopada na Warszawskim Uniwersytecie Medycznym odbędzie się konferencja TEDxWUM, podczas której 9 wyjątkowych prelegentów ze świata medycyny, technologii, szeroko pojętej nauki oraz sportu, wygłosi swoje inspirujące przemówienia i podzieli się z nami swoim doświadczeniem oraz wiedzą. TEDx jest rodzajem lokalnych konferencji, na które zapraszani są wyselekcjonowani prelegenci z różnorodnych dziedzin. Celem jest rozprzestrzenianie wyjątkowych pomysłów oraz stworzenie przestrzeni do odkrywania nowych idei.</p>
+                  </div>
+                </div>
+              </div>
+      
+              <!-- Accordion item 2 -->
+              <div class="card">
+                <div id="headingTwo" class="card-header bg-white shadow-sm border-0">
+                  <h5 class="mb-0 font-weight-bold"><a href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" class="d-block position-relative collapsed text-dark  collapsible-link py-2">Czym jest TEDx?</a></h5>
+                </div>
+                <div id="collapseTwo" aria-labelledby="headingTwo" data-parent="#accordionGroup" class="collapse">
+                  <div class="card-body p-5">
+                    <p class="font-weight-light m-0">W duchu pomysłów wartych rozpowszechnienia, TEDx jest to program lokalnych, samoorganizujących się wydarzeń, które łączą wspólnie ludzi, aby dzielić się doświadczeniami podobnymi do TED. Podczas wydarzenia TEDx Talks na nagraniach i na żywo łączą się, aby wywołać głęboką dyskusję. Te lokalne, samoorganizowane wydarzenia są oznaczone marką TEDx, gdzie x = niezależnie zorganizowane wydarzenie TED. Konferencja TED zawiera ogólne wytyczne dotyczące programu TEDx, ale wydarzenia TEDx są organizowane samodzielnie przez organizatorów z zachowaniem zastrzeżeniem niektórych zasad i przepisów.</p>
+                  </div>
+                </div>
+              </div>
+      
+              <!-- Accordion item 3 -->
+              <div class="card">
+                <div id="headingThree" class="card-header bg-white shadow-sm border-0">
+                  <h5 class="mb-0 font-weight-bold"><a href="#" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" class="d-block position-relative collapsed text-dark  collapsible-link py-2">Czym jest TED?</a></h5>
+                </div>
+                <div id="collapseThree" aria-labelledby="headingThree" data-parent="#accordionGroup" class="collapse">
+                  <div class="card-body p-5">
+                    <p class="font-weight-light m-0">TED jest organizacją non-profit zajmującą się upowszechnianiem idei wartych rozpowszechniania, często w formie krótkich rozmów prowadzonych przez czołowych myślicieli i wykonawców. Wiele z tych rozmów odbywa się na konferencjach TED, w tym nasze coroczne spotkanie w Vancouver, a także TEDWomen, kameralne TED Salony i tysiące niezależnie organizowanych imprez TEDx na całym świecie. Filmy z tych rozmów są dostępne za darmo, na TED.com i innych platformach. Audio wersje rozmów z TED2019 zostaną również opublikowane w TED's podcast TED Talks Daily, dostępne na Apple Podcasts i wszystkich innych platformach podcastowych. Otwarte i bezpłatne inicjatywy TED na rzecz rozpowszechniania idei obejmują TED.com, gdzie codziennie zamieszczane są nowe filmy TED Talk; TEDx, który udziela licencji tysiącom osób i grup na organizację lokalnych, samoorganizowanych imprez w stylu TED na całym świecie; program TED Fellows, który wybiera innowatorów z całego świata, aby wzmocnić wpływ ich niezwykłych projektów i działań; Audacious Project, który ujawnia i finansuje krytyczne pomysły, które mogą mieć wpływ na życie milionów ludzi; TEDSummit, który gromadzi najbardziej zaangażowanych członków globalnej społeczności TED na burze mózgów, dyskusje, spektakle, warsztaty i eklektyczny program rozmów na głównym etapie; oraz inicjatywę edukacyjną TED-Ed. TED posiada również bibliotekę oryginalnych podcastów, w tym The TED Interview with Chris Anderson, Sincerely, X, oraz jeden z najczęściej pobieranych nowych programów Apple Podcasts z 2018 roku, WorkLife with Adam Grant.</p>
+                  </div>
+                </div>
+              </div>
+      
             </div>
-            <div class="row mb-3  ">
-                <div class="col-12 ">
-                    <h2 class="font-weight-bold about-ted-border p-1"> Czym jest TED?</br></h2><!--<h5>x = independently organized event</h5>-->
-                    <p class="about-ted-formating">
-                        TED jest organizacją non-profit zajmującą się upowszechnianiem idei wartych rozpowszechniania, często w formie krótkich rozmów prowadzonych przez czołowych myślicieli i wykonawców. Wiele z tych rozmów odbywa się na konferencjach TED, w tym nasze coroczne spotkanie w Vancouver, a także TEDWomen, kameralne TED Salony i tysiące niezależnie organizowanych imprez TEDx na całym świecie. Filmy z tych rozmów są dostępne za darmo, na TED.com i innych platformach. Audio wersje rozmów z TED2019 zostaną również opublikowane w TED's podcast TED Talks Daily, dostępne na Apple Podcasts i wszystkich innych platformach podcastowych. Otwarte i bezpłatne inicjatywy TED na rzecz rozpowszechniania idei obejmują TED.com, gdzie codziennie zamieszczane są nowe filmy TED Talk; TEDx, który udziela licencji tysiącom osób i grup na organizację lokalnych, samoorganizowanych imprez w stylu TED na całym świecie; program TED Fellows, który wybiera innowatorów z całego świata, aby wzmocnić wpływ ich niezwykłych projektów i działań; Audacious Project, który ujawnia i finansuje krytyczne pomysły, które mogą mieć wpływ na życie milionów ludzi; TEDSummit, który gromadzi najbardziej zaangażowanych członków globalnej społeczności TED na burze mózgów, dyskusje, spektakle, warsztaty i eklektyczny program rozmów na głównym etapie; oraz inicjatywę edukacyjną TED-Ed. TED posiada również bibliotekę oryginalnych podcastów, w tym The TED Interview with Chris Anderson, Sincerely, X, oraz jeden z najczęściej pobieranych nowych programów Apple Podcasts z 2018 roku, WorkLife with Adam Grant.
-                        </p>
-               </div>
-            </div>
+          </div>
         </div>
-    </section>
+      </div>
+   
 
     <!-- Buy Tickets -->
     <div class="container">
         <div class="row justify-content-center ">
-            <div class="col-md-6 my-2">
+            <div class="col-md-6 my-4">
                 <a href="https://docs.google.com/forms/d/1EMn-EDnqrUCeHKyYSxYBEbZmg5lrEGalc6j7p8CPaWg/closedform">
     <button type="button" class="btn btn-outline-danger btn-lg btn-block">Kup bilet <i class="fas fa-chevron-circle-right"></i></button>
 </a>
@@ -319,6 +429,14 @@
         $('#year').text(new Date().getFullYear());
 
     </script>
+
+    <!-- AOS -->
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+
+    <script>
+            AOS.init();
+          </script>
+
 
 <!-- Pop-up -->
 <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">window.dojoRequire(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us20.list-manage.com","uuid":"ae7ae7d71f56eaab1b3974eb7","lid":"a5721d0007","uniqueMethods":true}) })</script></html>
