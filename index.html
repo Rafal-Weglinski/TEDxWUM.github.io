@@ -437,6 +437,16 @@
             AOS.init();
           </script>
 
+<script>
+    $(window).scroll(function() {
+  if ($(document).scrollTop() > 50) {
+    $('nav').addClass('shrink');
+  } else {
+    $('nav').removeClass('shrink');
+  }
+});
+</script>
+
 
 <!-- Pop-up -->
 <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">window.dojoRequire(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us20.list-manage.com","uuid":"ae7ae7d71f56eaab1b3974eb7","lid":"a5721d0007","uniqueMethods":true}) })</script></html>

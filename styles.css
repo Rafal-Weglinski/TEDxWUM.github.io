@@ -1,7 +1,50 @@
 
 .navbar-brand img {
     width: 15rem;
+    transition: all 0.3s ease
 }
+
+
+
+nav.navbar.shrink #language img {
+  width:30px;
+  transition: all 0.3s ease;
+}
+
+
+
+nav.navbar.shrink img{
+  width: 12rem;
+  transition: all 0.3s ease;
+}
+
+nav.navbar.shrink a {
+  font-size: 15px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+
+
+
+nav a {
+  font-size: 17px;
+  letter-spacing: 1.5px;
+  padding-bottom: 5px !important;
+  padding-top: 5px !important;
+  transition: all 0.3s ease;
+}
+
+#language {
+  display: flex;
+}
+
+#language img {
+  width:35px;
+  transition: all 0.3s ease
+}
+
+
 
 @media (max-width: 404px) {
     .navbar-brand img
@@ -42,6 +85,8 @@ body {
 #navbar {
     background-color: white;
     font-weight: 600;
+    padding-bottom: 2px;
+    
 }
 
 #smoke {
@@ -58,13 +103,7 @@ body {
 
 }
 
-#language {
-    display: flex;
-}
 
-#language img {
-    width:35px;
-}
 
 #home-icon-section img {
     margin-bottom: 30px;
