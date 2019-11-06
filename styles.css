@@ -1,10 +1,49 @@
+body {
+  font-family: Helvetica, Arial , sans-serif;
+  padding-top:100px;
+}
 
+/* Fix righ-sided whitespace */
+html,body
+{
+    overflow-x: hidden; 
+}
+
+/* Navbar general styling */
+
+#navbar {
+  background-color: white;
+  font-weight: 600;
+  padding-bottom: 2px;
+  
+}
+
+/* Brand logo  */
 .navbar-brand img {
     width: 15rem;
     transition: all 0.3s ease
 }
 
+nav.navbar.shrink img{
+  width: 12rem;
+  transition: all 0.3s ease;
+}
 
+@media (max-width: 404px) {
+  .navbar-brand img
+   {
+      width: 13rem;
+  }}
+
+/* Languages icons  */
+#language {
+  display: flex;
+}
+
+#language img {
+  width:35px;
+  transition: all 0.3s ease
+}
 
 nav.navbar.shrink #language img {
   width:30px;
@@ -12,9 +51,12 @@ nav.navbar.shrink #language img {
 }
 
 
-
-nav.navbar.shrink img{
-  width: 12rem;
+/* Navbar links  */
+nav a {
+  font-size: 17px;
+  letter-spacing: 1.5px;
+  padding-bottom: 5px !important;
+  padding-top: 5px !important;
   transition: all 0.3s ease;
 }
 
@@ -25,70 +67,13 @@ nav.navbar.shrink a {
 }
 
 
-
-
-nav a {
-  font-size: 17px;
-  letter-spacing: 1.5px;
-  padding-bottom: 5px !important;
-  padding-top: 5px !important;
-  transition: all 0.3s ease;
+/* Info sections  */
+#home-icon-section img {
+  margin-bottom: 30px;
+  height: 140px
 }
 
-#language {
-  display: flex;
-}
-
-#language img {
-  width:35px;
-  transition: all 0.3s ease
-}
-
-
-
-@media (max-width: 404px) {
-    .navbar-brand img
-     {
-        width: 13rem;
-    }
-    }
-    
-/* 
-    @media (max-width: 562px) {
-        .navbar-brand img
-         {
-            width: 13rem;
-        }
-        } */
-
-
-/* Fix righ-sided whitespace */
-html,body
-{
-   
-    overflow-x: hidden; 
-}
-/* Slider */
-
-
-
-
-.navbar-style {
-    background: white;
-}
-
-body {
-    font-family: Helvetica, Arial , sans-serif;
-    padding-top:100px;
-}
-
-#navbar {
-    background-color: white;
-    font-weight: 600;
-    padding-bottom: 2px;
-    
-}
-
+/* Agenda  */
 #smoke {
     
     position: relative; 
@@ -97,19 +82,8 @@ body {
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size:cover;
-    /* background-position: 0 -300px; */
     background-position: bottom;
-
-
 }
-
-
-
-#home-icon-section img {
-    margin-bottom: 30px;
-    height: 150px
-}
-
 
 .dark-overlay {
   position: absolute;
@@ -129,19 +103,11 @@ body {
     line-height: 250px; 
 }
 
+/* Our color  */
 .red {
     color:#FF2B06;
 }
 
-#main-footer {
-  background: #000;
-  color: #fff;
-  padding-top: 10px;
-}
-
-#social a {
-    color: #ffffff;
-}
 
 /* Google map */
 .map-container-5 {
@@ -158,7 +124,7 @@ width:100%;
 position:absolute;
 }
  
-/* Formularz */
+/* Form */
  .card-style {
      
     height: 320px;
@@ -167,11 +133,22 @@ position:absolute;
 .small {
     line-height: 1.3;
   }
-/* Formularz */
+
 .form-control:focus {
   border-color: #DC3545;
   box-shadow: none;
   
+}
+
+/* Footer  */
+#main-footer {
+  background: #000;
+  color: #fff;
+  padding-top: 10px;
+}
+
+#social a {
+    color: #ffffff;
 }
 
 footer a  {
@@ -187,69 +164,59 @@ footer a  {
 
 }
 
-.header-sponsors {
+/* Default header  */
+.default-header {
     margin-bottom: 20px;
     border-bottom: 1px solid gray;
     padding-bottom: 20px;
 }
 
+/* Fade effect for Oragnisers  */
 .Fade-image {
     -webkit-box-shadow: 0px 0px 15px 2px rgba(50, 50, 50, 0.67);
 -moz-box-shadow:    0px 0px 15px 2px rgba(50, 50, 50, 0.67);
 box-shadow:         0px 0px 15px 2px rgba(50, 50, 50, 0.67);
 }
 
+/* Organisers pictures */
 
-/* Our-team */
-
-.our-team{
+.speakers{
     position: relative;
     text-align:center;
     overflow: hidden;
-    box-shadow:0 0 5px #808080;
-    
 }
 
-.heading-title
-{
-	margin-bottom: 100px;
-}
-.our-team img{
-    width: 100%;
-    height: auto;
-    transform: scale(1);
-    transition: all 0.40s linear 0s;
+.speakers img{
+  width: 100%;
+  height: auto;
+  transform: scale(1);
+  transition: all 0.40s linear 0s;
 }
 
-.our-team:hover img{
+
+.speakers:hover img{
     transform: scale(1.2);
     transition:transform 0.2s linear 0s;
 }
 
-.our-team .team-content{
+.speakers .team-content{
     position: absolute;
     top: 5%;
     left: 5%;
     width: 90%;
     height: 90%;
     opacity: 0;
-    /* padding: 40px 20px; */
     background: rgba(255,255,255,0.8);
-    /* transition: all 0.50s ease-in-out; */
+    transition: all 0.30s ease-in-out;
 }
 
-.our-team:hover .team-content{
+.speakers:hover .team-content{
     opacity: 1;
 }
 
-.our-team .team-prof{
-    
-    position:relative;
 
-    
-}
 
-.our-team .team-prof {
+.speakers .team-prof {
     color:#6a6060;
     /* font-size:; */
     font-weight: bold;
@@ -260,7 +227,7 @@ box-shadow:         0px 0px 15px 2px rgba(50, 50, 50, 0.67);
 
 
 
-.our-team .team-prof small{
+.speakers .team-prof small{
     color: black;
     display: block;
     font-size:12px;
@@ -268,20 +235,20 @@ box-shadow:         0px 0px 15px 2px rgba(50, 50, 50, 0.67);
    
 }
 
-.our-team .social-link{
+.speakers .social-link{
     padding:0;
     margin:0;
     /* position:relative; */
     top:13%;
 }
 
-.our-team .social-link li{
+.speakers .social-link li{
     list-style:none;
     margin-right:5px;
     display:inline-block;
 }
 
-.our-team .social-link li a{
+.speakers .social-link li a{
     width: 35px;
     height: 35px;
     line-height:35px;
@@ -290,7 +257,7 @@ box-shadow:         0px 0px 15px 2px rgba(50, 50, 50, 0.67);
     background:rgba(0, 0, 0, 0.3);
 }
 
-.our-team .social-link li a:hover{
+.speakers .social-link li a:hover{
     background:#333;
     text-decoration:none;
 }
@@ -300,7 +267,7 @@ a:hover {
 }
 
 @media only screen and (max-width: 990px){
-    .our-team{  margin-bottom:20px; }
+    .speakers{  margin-bottom:20px; }
 }
 
 
@@ -308,7 +275,7 @@ a:hover {
     .hide-on-mobile {
     display: none;
     }
-            .our-team .team-prof:hover{
+            .speakers .team-prof:hover{
         text-decoration: none;
     }
     }
@@ -318,7 +285,7 @@ a:hover {
          {
         display: none;
         }
-        .our-team .team-prof:hover {
+        .speakers .team-prof:hover {
             text-decoration: underline;
             text-decoration-color: black;
             color: black;
