@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
         integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles_home.css">
     <link rel="shortcut icon" type="image/png" href="/favicon.png"/> 
 
     <title>TEDxWUM</title>
@@ -32,7 +32,8 @@
     <nav class="navbar navbar-expand-lg fixed-top navbar-style navbar-light" id="navbar">
         <div class="container">
             <a class="navbar-brand" href="eng.html">
-                <img src="Images/TEDxWUM1.png" alt="Brand logo">
+                <img src="Images/TEDxWUM1.png" alt="Brand logo" class="color_logo">
+                <img src="Images/TEDxWUM white.png" alt="Brand logo" class="white_logo">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -100,6 +101,19 @@
             <span class="sr-only">Next</span>
         </a>
     </div>
+
+    <!-- Video  -->
+    <header id="video">
+        <div class="overlay"></div>
+        <video playsinline="playsinline"  autoplay="autoplay" muted="muted" loop="loop">
+          <source src="Images/TEDxWUM.mp4" type="video/mp4">
+        </video>
+        <div class="container h-100">
+          <div class="d-flex h-100 text-center align-items-center">
+            
+          </div>
+        </div>
+      </header>
     
     <!-- Informacje -->
     
@@ -133,7 +147,7 @@
     </section>
     
     <!-- Dym -->
-    <Header id="smoke" class="p-5">
+    <div id="smoke" class="p-5">
         <div class="dark-overlay">
             <div class="row">
                 <div class="col">
@@ -143,7 +157,7 @@
                 </div>
             </div>
         </div>
-    </Header>
+    </div>
 
     <!-- Time line -->
 <div class="timeline-container">
