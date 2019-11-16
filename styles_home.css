@@ -64,7 +64,7 @@ nav.navbar.shrink a {
   /* Navbar general styling */
 
 #navbar {
-  background-color:rgba(0, 0, 0, 0.4);
+  background-color:rgba(0, 0, 0, 1);
   
   font-weight: 600;
   padding-bottom: 2px;
@@ -84,14 +84,14 @@ nav.navbar.shrink a {
 }
 
 body {
-    padding-top:0;
+    padding-top:80px;
   }
 
   header {
     display: block;
     position: relative;
     background-color: black;
-    height: 90vh;
+    height: 80vh;
     min-height: 25rem;
     width: 100%;
     overflow: hidden;
